@@ -16,3 +16,12 @@ Route::get('/', function () {
 });
 
 Route::post('/charge', 'CheckoutController@charge');
+
+Route::get('/subscribe', function () {
+    return view('subscribe');
+});
+
+Route::post('/subscribe_process', 'CheckoutController@subscribe_process');
+
+Route::get('/invoices', 'CheckoutController@invoices');
+Route::get('/invoice/{invoice_id}', 'CheckoutController@invoice');

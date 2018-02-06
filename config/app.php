@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Laravel\Cashier\CashierServiceProvider::class,
 
         /*
          * Application Service Providers...
