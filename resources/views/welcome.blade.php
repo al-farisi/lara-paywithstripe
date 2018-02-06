@@ -12,7 +12,7 @@
             {{ csrf_field() }}
             <script
                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_test_62gPR3cFXhROJL94f11tmeBD"
+                    data-key="{{ env('STRIPE_PUB_KEY') }}"
                     data-amount="1999"
                     data-name="Stripe Demo"
                     data-description="Online course about integrating Stripe"
